@@ -1,0 +1,302 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: bold;
+}
+
+.logo {
+    margin: 12px;
+    display: flex;
+    padding: 2px;
+    width: 70px;
+    border: 2px solid white;
+    border-radius: 50px;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+
+
+}
+
+.background {
+    background: rgba(0, 0, 0, 0.7) url(bg.jpg);
+    background-size: cover;
+    background-blend-mode: darken;
+}
+
+.navlist {
+    display: flex;
+    width: 49%;
+    align-items: center;
+    cursor: pointer;
+}
+
+.navlist li a {
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+}
+
+.navlist li a:hover {
+    color: rgb(171, 5, 171);
+
+}
+
+.navlist li {
+    display: inline-block;
+    margin: 8px;
+    padding: 20px;
+}
+
+.rightnav {
+    width: 49%;
+    text-align: right;
+}
+
+#search {
+    padding: 5px;
+    font-size: 17px;
+    border: 2px solid gray;
+    border-radius: 10px;
+}
+
+.main-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 70%;
+    margin: auto;
+    height: 85%;
+}
+
+.firstsection {
+    height: 100vh;
+    color: white;
+}
+
+.headline {
+    font-size: 45px;
+    font-style: bolder;
+
+}
+
+.containt {
+    font-size: 16px;
+    font-style: bolt;
+
+}
+
+.firsthalf {
+    display: flex;
+    flex-direction: column;
+    max-width: 70%;
+    justify-content: center;
+}
+
+.secondhalf {
+    width: 30%;
+}
+
+.secondhalf img {
+    width: 70%;
+    border: 4px solid white;
+    padding: 2px;
+    border-radius: 50%;
+    display: block;
+    margin: auto;
+}
+
+.btn {
+    padding: 8px 15px;
+    margin: 10px;
+    border-radius: 20px;
+    border: 2px solid white;
+    cursor: pointer;
+    font-weight: bolder;
+}
+
+.btn:hover {
+    border: 2px solid white;
+    background-color: transparent;
+    color: white;
+
+
+}
+
+.btn-sm {
+    vertical-align: center;
+}
+
+.section {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    max-width: 80%;
+    margin: auto;
+    margin-top: 30px;
+}
+
+.musicimg {
+    width: 320px;
+    border: 2px solid white;
+    border-radius: 25%;
+    padding: 10px;
+}
+
+.secleft {
+    flex-direction: row-reverse;
+}
+
+
+.subscribe {
+    margin-top: 30px;
+    background-color: lightgray;
+    height: auto;
+}
+
+h2 {
+    padding-top: 20px;
+    text-align: center;
+    font-size: 36px;
+    font-weight: bolder;
+
+}
+
+h2:hover {
+    text-decoration: underline gray;
+}
+
+.form {
+    max-width: 360px;
+    margin: auto;
+    text-align: center;
+}
+
+.form input {
+    margin: 25px 0px;
+    border: 2px solid rgb(118, 117, 117);
+    border-radius: 5px;
+    font-size: 18px;
+    padding: 4px 10px;
+    width: 100%;
+
+}
+
+.form input:hover {
+    background-color: white;
+}
+
+.submit {
+    font-size: 20px;
+    padding: 8px 15px;
+    margin: 10px;
+    border-radius: 20px;
+    border: 2px solid drgb(118, 117, 117);
+    cursor: pointer;
+    font-weight: bolder;
+    background-color: white;
+}
+
+.submit:hover {
+    background: none;
+    font-size: 22px;
+}
+
+footer {
+    background: url(bg.jpg);
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    color: white;
+}
+
+.burger {
+    display: none;
+    position: absolute;
+    cursor: pointer;
+    top: 15px;
+    right: 5%;
+}
+
+.line {
+    background-color: white;
+    width: 35px;
+    height: 5px;
+    margin: 6px 5px;
+}
+
+.imusic-resp {
+    display: none;
+    position: absolute;
+    font-size: 50px;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    font-weight: 900;
+
+}
+
+@media only screen and (max-width: 1250px) {
+    .navlist {
+        flex-direction: column;
+    }
+
+    .navbar {
+        flex-direction: column;
+        transition: all 0.7s ease-out;
+    }
+
+    .rightnav {
+        text-align: center;
+    }
+
+    #search {
+        width: 100%;
+    }
+
+    .burger {
+        display: block;
+        top: 25px;
+
+    }
+
+    .h-nav-resp {
+        height: 80px;
+    }
+
+    .v-list-resp {
+        visibility: hidden;
+    }
+
+    .imusic-resp {
+        display: block;
+        align-items: top;
+        margin: 2px;
+    }
+
+    .section {
+        text-align: center;
+        flex-direction: column-reverse;
+    }
+
+    .main-box {
+        text-align: center;
+        flex-direction: column-reverse;
+        max-width: 100%;
+
+    }
+
+    .subscribe {
+        text-align: center;
+    }
+}
